@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <fieldset style="background-color: gray;">
+                <legend style="background-color: #FFFFFF;">Dades Personals</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nom">Nom: </label><br>
+                            <input type="text" id="nom" placeholder="El teu nom" /><br><br>
+                        </td>
+                        <td>
+                            <label for="cognom">Cognom:</label><br>
+                            <input type="text" id="cognom" placeholder="El teu cognom" /><br><br>
+                        </td>
+                        <td>
+                            <label for="dni">Dni:</label><br>
+                            <input type="text" id="dni" placeholder="El teu dni " /><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="l_Naix">Lloc de Naixement: </label><br>
+                            <input type="text" id="l_Naix" placeholder="El teu nom" /><br><br>
+                        </td>
+                        <td>
+                            <label for="provincia">Provincia:</label><br>
+                            <select name="provincia">
+                                <optgroup label="Catalunya">
+                                    <option selected value="B">Barcelona</option>
+                                    <option>Tarragona</option>
+                                    <option>Girona</option>
+                                    <option>Lleida</option>
+                                </optgroup>
+                            </select><br><br>
+                        </td>
+                        <td>
+                            <label for="d_naix">Data Naixement:</label><br>
+                            <input type="text" id="d_naix" placeholder="Insereix la data de naxement" /><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="adreça">Adreça: </label><br>
+                            <input type="text" id="adreça" placeholder="Insereix l'adreça" /><br><br>
+                        </td>
+                        <td>
+                            <label for="c_postal">Codi Postal:</label><br>
+                            <input type="text" id="c_postal" placeholder="Insereix el codi postal" /><br><br>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="background-color: #f1c29c;">
+                <legend style="background-color: #FFFFFF;">Forma d'accés</legend>
+                <p>
+                <ul>
+                    <input type="radio" name="acces" value="" />Directe
+                    <ul>
+                        <input type="radio" name="acces" value="" />Batxilletat<br>
+                        <input type="radio" name="acces" value="" />Experimental<br>
+                        <input type="radio" name="acces" value="" />COU<br>
+                        <input type="radio" name="acces" value="" />FP2<br>
+                        <input type="radio" name="acces" value="" />Altres...<br>
+                    </ul>
+                    <input type="radio" name="acces" value="" />Prova lliure
+                </ul>
+                </p>
+            </fieldset>
+            <fieldset  style="background-color: #b67e7e;">
+                <legend style="background-color: #FFFFFF;">Documents adjunts</legend>
+                <input type="checkbox" name="dispositius" value="pc">Fotocopia DNI
+                <input type="checkbox" name="dispositius" value="table">Certificat Acadèmic<br />
+                <input type="checkbox" name="dispositius" value="mobil">Altres Documents(especifiqueu-los) <input
+                    type="text" id="documents" placeholder="" />
+            </fieldset>
+    </section>
+    <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
